@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { product } from "./product";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { Image } from "./Image";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello</h1>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="Image" />
+        <Card.Body>
+          <Card.Title>"./product" </Card.Title>
+          <Card.Text>best msi .</Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
 
+
 export default App;
+ 
